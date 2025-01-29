@@ -1,6 +1,6 @@
 const svg = d3.select("svg");
 
-// 🐰 Body
+// Body
 svg.append("ellipse")
   .attr("cx", 200)
   .attr("cy", 250)
@@ -8,14 +8,14 @@ svg.append("ellipse")
   .attr("ry", 70)
   .attr("fill", "#D9C2A3");
 
-// 🐰 Head
+// Head
 svg.append("circle")
   .attr("cx", 200)
   .attr("cy", 170)
   .attr("r", 40)
   .attr("fill", "#D9C2A3");
 
-// 🐰 Ears
+// Ears
 const leftEar = svg.append("ellipse")
   .attr("cx", 180)
   .attr("cy", 100)
@@ -30,7 +30,7 @@ const rightEar = svg.append("ellipse")
   .attr("ry", 60)
   .attr("fill", "#D9C2A3");
 
-// 🐰 Inner Ears
+// Inner Ears
 svg.append("ellipse")
   .attr("cx", 180)
   .attr("cy", 100)
@@ -45,7 +45,7 @@ svg.append("ellipse")
   .attr("ry", 40)
   .attr("fill", "pink");
 
-// 🐰 Eyes
+// Eyes
 const leftEye = svg.append("circle")
   .attr("cx", 190)
   .attr("cy", 165)
@@ -58,34 +58,34 @@ const rightEye = svg.append("circle")
   .attr("r", 5)
   .attr("fill", "black");
 
-// 🐰 Nose
+// Nose
 svg.append("circle")
   .attr("cx", 200)
   .attr("cy", 172)
   .attr("r", 4)
   .attr("fill", "pink");
 
-// 🐰 Mouth
+// Mouth
 svg.append("path")
   .attr("d", "M 195 180 Q 200 190, 205 180")
   .attr("stroke", "black")
   .attr("fill", "transparent")
   .attr("stroke-width", 2);
 
-// 🐰 Whiskers
+// Whiskers
 svg.append("line").attr("x1", 175).attr("y1", 175).attr("x2", 150).attr("y2", 170).attr("stroke", "black").attr("stroke-width", 2);
 svg.append("line").attr("x1", 175).attr("y1", 180).attr("x2", 150).attr("y2", 185).attr("stroke", "black").attr("stroke-width", 2);
 svg.append("line").attr("x1", 225).attr("y1", 175).attr("x2", 250).attr("y2", 170).attr("stroke", "black").attr("stroke-width", 2);
 svg.append("line").attr("x1", 225).attr("y1", 180).attr("x2", 250).attr("y2", 185).attr("stroke", "black").attr("stroke-width", 2);
 
-// 🐰 Paws
+// Paws
 svg.append("circle").attr("cx", 180).attr("cy", 310).attr("r", 15).attr("fill", "#D9C2A3");
 svg.append("circle").attr("cx", 220).attr("cy", 310).attr("r", 15).attr("fill", "#D9C2A3");
 
-// 🐰 Tail
+// Tail
 svg.append("circle").attr("cx", 250).attr("cy", 270).attr("r", 10).attr("fill", "#E6DACB");
 
-// // ❤️ Heart (Floating Effect)
+// // Heart (Floating Effect)
 // const heart = svg.append("text")
 //   .attr("x", 250)
 //   .attr("y", 150)
@@ -103,7 +103,7 @@ svg.append("circle").attr("cx", 250).attr("cy", 270).attr("r", 10).attr("fill", 
 //     .on("end", floatHeart);
 // }
 
-// 🏆 Ears Movement Animation
+// Ears Movement Animation
 function moveEars() {
   leftEar.transition()
     .duration(500)
@@ -122,7 +122,7 @@ function moveEars() {
 }
 moveEars(); // Start ear animation
 
-// 🏆 Blinking Animation (Using setInterval)
+// Blinking Animation (Using setInterval)
 setInterval(() => {
   leftEye.attr("r", 1);
   rightEye.attr("r", 1);
