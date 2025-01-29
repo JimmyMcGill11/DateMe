@@ -18,4 +18,7 @@ yesBtn.addEventListener("mouseover", function () {
 yesBtn.addEventListener("click", function () {
   emoji.innerHTML = "❤️";
   emoji.style.cssText = "animation: emoji .4s infinite ease";
+
+  noBtn.remove();
+  yesBtn.remove();
 });
