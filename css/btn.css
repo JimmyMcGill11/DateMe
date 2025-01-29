@@ -12,6 +12,7 @@
   font-family: none;
   z-index: 0;
   position: relative;
+  border: 1px solid #ccc;
 }
 
 .btn::after {

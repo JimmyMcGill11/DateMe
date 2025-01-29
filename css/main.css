@@ -12,14 +12,15 @@
 }
 
 .container {
-  background-color: #faebd7;
+  background-color: #030303;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
 .container h1 {
-  color: #fd47f7;
+  color: #d9c2a3;
+  /* color: #fd47f7; */
   font-size: 40px;
   width: 100%;
   text-align: center;
@@ -37,7 +38,7 @@
 
 .container .buttons {
   position: absolute;
-  top: 70%;
+  top: 72%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -46,13 +47,11 @@
   transition: .2s;
 }
 
-.container .emoji {
+svg {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 80px;
-  /* animation: emoji .4s infinite ease; */
 }
 
 .container .copyright {
@@ -71,5 +70,15 @@
   }
   50% {
     transform: scale(1.1) translateX(-50%);
+  }
+}
+
+@keyframes rappit {
+  0%,
+  100% {
+    transform:  translateX(-50%);
+  }
+  50% {
+    transform: translateY(-40px)  translateX(-50%);
   }
 }
